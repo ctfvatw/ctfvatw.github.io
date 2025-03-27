@@ -1,207 +1,505 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <meta name="keywords" content="氣球排球, 共融運動">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title> 中華民國氣球排球協會</title>
   
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/webclip/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/webclip/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/webclip/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/webclip/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/webclip/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/webclip/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/webclip/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/webclip/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/webclip/apple-touch-icon-167x167.png">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
   
   
 <link rel="stylesheet" href="/css/style.css">
 
+  <style>
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+
+    .heroSwiper {
+      width: 100%;
+      height: 100%;
+      position: relative; /* 確保 Swiper 容器是定位的父元素 */
+    }
+
+    .heroSwiper .swiper-slide {
+      width: 100%;
+      height: 100%;
+    }
+
+    .heroSwiper .hero-figure-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .heroSwiper .swiper-pagination {
+      position: absolute;
+      bottom: 20px;
+      z-index: 10; /* 確保分頁符在 slogan 上方 */
+    }
+
+    .heroSwiper .swiper-pagination-bullet {
+      background: #fff;
+    }
+
+    /* 新增樣式：定位 slogan */
+    .heroSwiper .hero-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5; /* 確保 slogan 在圖片上方 */
+      color: #fff; /* 根據圖片背景調整文字顏色 */
+      text-align: center;
+      width: 100%;
+    }
+
+    .heroSwiper .hero-caption .h1 {
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加陰影以提高可讀性 */
+    }
+
+    .heroSwiper .hero-caption p {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加陰影以提高可讀性 */
+    }
+  </style>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <main class="main">
+    
+	<header id="header" class="header header-absolute">
+
+	<div class="container">
+		<nav class="navbar d-flex align-items-center">
+			<a class="brand" href="/">
+				<img class="logo lazyload" data-src="/images/brand.png" alt="中華民國氣球排球協會" role="img">
+			</a>
+			<ul class="main-nav">
   
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首頁</a>
+  </li>
   
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">最新消息</a>
+  </li>
   
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">關於協會</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/intro">氣球排球介紹</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">活動紀錄</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/partner">加入我們</a>
+  </li>
+  
+</ul>
+		</nav>
+		<a id="mobile-nav-toggle">
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+			<span class="mobile-nav-toggle-bar"></span>
+		</a>
+	</div>
+</header>
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+    <section>
+      <!-- Index -->
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+<div class="hero">
+	<div class="swiper heroSwiper">
+	  <div class="swiper-wrapper">
+		<div class="swiper-slide">
+		  <img class="hero-figure-img" src="/images/banner/banner.jpg" alt="中華民國氣球排球協會">
+		</div>
+		<div class="swiper-slide">
+		  <img class="hero-figure-img" src="/images/banner/banner2.jpg" alt="中華民國氣球排球協會">
+		</div>
+		<div class="swiper-slide">
+		  <img class="hero-figure-img" src="/images/banner/banner4.jpg" alt="中華民國氣球排球協會">
+		</div>
+	  </div>
+	  <div class="swiper-pagination"></div>
+	  <!-- 將 <figcaption> 移入 Swiper 容器內 -->
+	  <figcaption class="hero-caption">
+		<div class="container">
+		  <div class="figure-inset">
+			<h2 class="h1">中華民國氣球排球協會</h2>
+			<p>多元共融，樂趣無窮</p>
+		  </div>
+		</div>
+	  </figcaption>
+	</div>
+</div>
+
+<section class="section py-5 bg-light">
+  <div class="container">
+    <!-- 
+  Data Files: source/_data/culture.yml
+-->
+<div class="row">
+  
+    <div class="col-4">
+      
+        <a href="/about/" style="text-decoration: none; color: inherit;">
+      
+      <div class="card p-5 text-center">
+        <img class="mb-4" src="/images/culture/icon_1.svg" alt="關於我們" width="64" height="64">
+        <div class="card-body p-0">
+          <h4 class="card-title text-primary">關於我們</h4>
+          <p class="card-text" style="text-align: justify;">我們致力於推廣「每個人都能參與」的適應性運動理念，讓不同程度的身心障礙者也能輕鬆投入，享受運動的樂趣。透過氣球排球這項運動，我們希望打造一個相互支持、彼此包容的社會，讓每個人都能找到適合自己的運動方式，享受運動帶來的歡樂與健康。</p>
+        </div>
+      </div>
+      
+        </a>
       
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+  
+    <div class="col-4">
+      
+      <div class="card p-5 text-center">
+        <img class="mb-4" src="/images/culture/icon_2.svg" alt="共融式運動" width="64" height="64">
+        <div class="card-body p-0">
+          <h4 class="card-title text-primary">共融式運動</h4>
+          <p class="card-text" style="text-align: justify;">共融式運動強調「透過合理調整」，讓所有人都能在運動中找到自己的角色與定位，不論年齡、體能或經驗。我們相信，每一次的參與都是一次成長，透過運動拉近彼此的距離，建立友誼、提升自信，讓運動成為促進社會共融的重要橋樑。</p>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="col-4">
+      
+        <a href="/intro/" style="text-decoration: none; color: inherit;">
+      
+      <div class="card p-5 text-center">
+        <img class="mb-4" src="/images/culture/icon_3.svg" alt="如何開始" width="64" height="64">
+        <div class="card-body p-0">
+          <h4 class="card-title text-primary">如何開始</h4>
+          <p class="card-text" style="text-align: justify;">氣球排球是一項簡單、容易上手又充滿樂趣的運動！不論是個人、朋友或家庭，都能輕鬆學會並享受比賽的樂趣。我們提供完整的入門指導與活動資訊，讓你快速掌握運動規則，立即投入這項健康又快樂的運動！快來看看如何開始你的氣球排球之旅吧！</p>
+        </div>
+      </div>
+      
+        </a>
+      
+    </div>
+  
+</div>
+  </div>
+</section>
+
+
+  <section class="section py-5 " id="">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h3>活動紀錄</h3>
+        <p class="text-gray"></p>
+      </div>
+
+      
+        <div class="section-body">
+          <!-- 
+  Data Files: source/_data/album.yml
+  
+-->
+
+<div class="album-grid album-grid-6" id="album-grid">
+  
+  <div class="album-grid-item">
+    <div class="album-art" style="background-image: url(/images/sample/112.jpg)">
+      <div class="album-art-text">
+        <h5 class="mb-0">氣球排球校際交流賽</h5>
+        <small class="text-secondary d-block mb-3"></small>
+        <p class="font-w-lighter"></p>
       </div>
     </div>
   </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/03/05/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-03-05T15:06:50.511Z" itemprop="datePublished">2025-03-05</time>
-</a>
-    
+  <div class="album-grid-item">
+    <div class="album-art" style="background-image: url(/images/sample/113-1.jpg)">
+      <div class="album-art-text">
+        <h5 class="mb-0">氣球排球校際交流賽</h5>
+        <small class="text-secondary d-block mb-3"></small>
+        <p class="font-w-lighter"></p>
+      </div>
+    </div>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/03/05/hello-world/">Hello World</a>
-    </h1>
+  <div class="album-grid-item">
+    <div class="album-art" style="background-image: url(/images/sample/24tay.jpg)">
+      <div class="album-art-text">
+        <h5 class="mb-0">桃園市脊髓損傷者協會 x 氣球排球體驗</h5>
+        <small class="text-secondary d-block mb-3"></small>
+        <p class="font-w-lighter">桃園市脊髓損傷者協會的活動，帶領協會的會員及家屬們一起體驗氣球排球的樂趣！</p>
+      </div>
+    </div>
+  </div>
   
+  <div class="album-grid-item">
+    <div class="album-art" style="background-image: url(/images/sample/coachworkshop.jpg)">
+      <div class="album-art-text">
+        <h5 class="mb-0">種子教師研習</h5>
+        <small class="text-secondary d-block mb-3"></small>
+        <p class="font-w-lighter">教師們透過種子教師研習認識氣球排球，研習後將其融入適應體育教學並推廣，為校園增添活力，讓每位學生感受到運動的快樂。</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="album-grid-item">
+    <div class="album-art" style="background-image: url(/images/sample/fusenvolley_learn.jpg)">
+      <div class="album-art-text">
+        <h5 class="mb-0">氣球排球教學</h5>
+        <small class="text-secondary d-block mb-3"></small>
+        <p class="font-w-lighter"></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="album-grid-item">
+    <div class="album-art" style="background-image: url(/images/sample/coach_workshop.jpg)">
+      <div class="album-art-text">
+        <h5 class="mb-0">推廣研習</h5>
+        <small class="text-secondary d-block mb-3"></small>
+        <p class="font-w-lighter"></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
+        </div>
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/03/05/hello-world/" data-id="cm7w241zy0000ggxg72bp8tmr" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+  </section>
+
+  <section class="section py-5 " id="">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h3>最新消息</h3>
+        <p class="text-gray"></p>
+      </div>
+
       
+        <div class="section-body">
+          
+  <div class="row flex-wrap">
+    
+      <div class="col-3">
+        <article id="post-1140324" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    <!-- 索引頁：顯示摘要 -->
+    <div class="card rounded">
       
-      
-    </footer>
-  </div>
+      <div class="card-body bg-light">
+        
+  
+    <h5 class="article-title mb-0 line-clamp line-clamp-1" itemprop="name">
+      <a href="/2025/03/23/1140324/">「🎈氣球排球Fun鬆玩，身心共融更精彩」假日氣球排球體驗暨活動營隊！</a>
+    </h5>
+  
+
+        <time class="text-gray" datetime="2025-03-23T07:41:41.000Z" itemprop="datePublished">
+  2025-03-23
+</time>
+        <div class="card-text mt-3 line-clamp line-clamp-2"><p>邀您一起體驗氣球排球的魅力!                                           </p></div>
+        <hr class="hr">
+        
+          <div class="article-more-link">
+            <a href="/2025/03/23/1140324/#more">閱讀全文</a>
+          </div>
+        
+      </div>
+    </div>
   
 </article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li></ul>
-    </div>
+      </div>
+      
   </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+
+        </div>
+      
+      
+        <div class="d-flex justify-content-center pt-5">
+          <a href="/archives/" title="→ 查看更多" class="btn btn-lg bg-white shadow-hover">→ 查看更多</a>
+        </div>
+      
+    </div>
+  </section>
+
+
+    </section>
+    <footer class="footer pt-5 mt-5">
+  <div class="container">
+    <div class="py-3">
+      <div class="row justify-content-between">
+        <div class="col-6">
+          <img class="filter-gray mb-3 lazyload" height="40" data-src="/images/brand.png" alt="中華民國氣球排球協會" role="img">
+          <p class="mb-4"></p>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a target="_blank" rel="noopener" href="https://facebook.com/ctfva">
+                  <img 0="facebook" src="/images/icons/contact_fb.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="mailto:ctfvatw@gmail.com">
+                  <img 0="電子郵件" src="/images/icons/contact_email.svg">
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5>相關連結</h5>
+          <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a href="https://fusenvolley.jimdofree.com/" title="日本氣球排球協會" target="_blank" rel="noopener">日本氣球排球協會</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="hr" style="opacity: .25;">
+    <div class="pt-3 pb-5">
+      <ul class="list-inline mb-0 text-center">
+        <li class="list-inline-item">&copy; 2025 中華民國氣球排球協會</li>
         
-          <li>
-            <a href="/2025/03/05/hello-world/">Hello World</a>
-          </li>
-        
+        <li class="list-inline-item">Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+        <li class="list-inline-item">Designer <a href="https://acorn.imaging.xin/" target="_blank">中華民國氣球排球協會</a></li>
       </ul>
     </div>
   </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
-
-    </div>
-    <nav id="mobile-nav">
+  </main>
+  <div id="mobile-nav-dimmer"></div>
+<div id="mobile-nav">
+	<div id="mobile-nav-inner">
+		<ul class="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/">首頁</a>
+  </li>
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/archives">最新消息</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/about">關於協會</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/intro">氣球排球介紹</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/gallery">活動紀錄</a>
+  </li>
+  
+    
+  <li class="nav-item ">
+    <a class="nav-item-link" href="/partner">加入我們</a>
+  </li>
+  
+</ul>
+		
+	</div>
+</div>
+
+  <script src="/libs/feather/feather.min.js"></script>
+<script src="/libs/lazysizes/lazysizes.min.js"></script>
 
 
+
+	<!-- Swiper JS -->
+	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper for oneSwiper (articles) -->
+	<script>
+		var swiper = new Swiper(".oneSwiper", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 30,
+            effect: 'fade',
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
+	<!-- Initialize Swiper for heroSwiper (homepage banner) -->
+	<script>
+		var heroSwiper = new Swiper(".heroSwiper", {
+			loop: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
+
+
+
+<script src="/js/mobile-nav.js"></script>
 
 
 <script src="/js/script.js"></script>
 
-
-
-
-
-  </div>
 </body>
 </html>
