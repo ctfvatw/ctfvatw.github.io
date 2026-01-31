@@ -1,3 +1,4 @@
+https://ctfvatw.github.io/2026/01/31/1150124/
 https://ctfvatw.github.io/about/index.html
 https://ctfvatw.github.io/partner/index.html
 https://ctfvatw.github.io/2025/05/20/1140517-md/
@@ -14,5 +15,7 @@ https://ctfvatw.github.io/tags/%E6%B0%A3%E7%90%83%E6%8E%92%E7%90%83/
 https://ctfvatw.github.io/tags/%E5%85%B1%E8%9E%8D%E9%81%8B%E5%8B%95/
 https://ctfvatw.github.io/tags/%E8%B3%BD%E4%BA%8B%E6%B4%BB%E5%8B%95/
 https://ctfvatw.github.io/tags/%E9%AB%94%E9%A9%97%E6%B4%BB%E5%8B%95/
+https://ctfvatw.github.io/tags/%E5%9C%8B%E5%B0%8F%E9%8C%A6%E6%A8%99%E8%B3%BD/
+https://ctfvatw.github.io/tags/%E6%A0%A1%E5%9C%92%E6%8E%A8%E5%BB%A3/
 https://ctfvatw.github.io/categories/%E8%B3%BD%E4%BA%8B%E6%B4%BB%E5%8B%95/
 https://ctfvatw.github.io/categories/%E9%AB%94%E9%A9%97%E6%B4%BB%E5%8B%95/
